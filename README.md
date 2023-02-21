@@ -2,7 +2,7 @@
 ### Cíl projektu:
 Vytvořit hru Snake a k ní algoritmus, který hru dohraje ve většině případů.
 ### Použité technologie:
-Celý program bude napsán v jazyku C#. <br>
+Celý program bude napsán v jazyku C#. Používám .NET 7.0<br>
 Používám šablonu WPF. <br>
 Algoritmus bude používat A* (AStar) algoritmus a předem definovaný Hamiltonovský cyklus.
 ### Předpokládaná náročnost:
