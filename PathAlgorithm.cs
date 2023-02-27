@@ -114,7 +114,7 @@ namespace SnakeAl
             Position pos = new Position(end.Row, end.Col);
             while(true)
             {
-                if(pos.Row == start.Row && pos.Col == start.Col)
+                if(pos == start)
                 {
                     return path;
                 }
@@ -140,7 +140,7 @@ namespace SnakeAl
             {
                 Position pos = FindLowestF(grid, fcosts);
                 grid[pos.Row, pos.Col] = 4;
-                if(pos.Row == end.Row && pos.Col == end.Col)
+                if(pos == end)
                 {
                     return Path(grid, parents, end, start);
                 }
@@ -150,7 +150,7 @@ namespace SnakeAl
                     {
                         Position n = new Position(pos.Row + r, pos.Col + c);
                         if((r != 0 && c != 0) || (r == 0 && c == 0) || WillHit(cells, n, 0, 0)
-                           || grid[n.Row,n.Col] == 4 || grid[n.Row,n.Col] == 5 || order[n.Row, n.Col] < order[pos.Row, pos.Col])
+                           || grid[n.Row,n.Col] == 4  || grid[n.Row,n.Col] == 5 || order[n.Row, n.Col] < order[pos.Row, pos.Col])
                         {
                             continue;
                         }

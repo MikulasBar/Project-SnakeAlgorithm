@@ -60,7 +60,7 @@ namespace SnakeAl
             foreach(Edge i in edges)
             {
                 if((nodes[i.NodeA.Row, i.NodeA.Col] == 0 && nodes[i.NodeB.Row, i.NodeB.Col] == 0) 
-                || i.active == true || (nodes[i.NodeA.Row, i.NodeA.Col] == 1 && nodes[i.NodeB.Row, i.NodeB.Col] == 1))
+                || (nodes[i.NodeA.Row, i.NodeA.Col] == 1 && nodes[i.NodeB.Row, i.NodeB.Col] == 1))
                 {
                     continue;
                 }
