@@ -25,9 +25,7 @@ namespace SnakeAl
             for(int r = 0; r < rows; r++)
             {
                 for(int c = 0; c < cols; c++)
-                {
                     cells[r,c].Background = empty;
-                }
             }
             for(int n = 0; n < 2; n++)
             {
@@ -162,9 +160,7 @@ namespace SnakeAl
             for(int r = 0; r < rows; r++)
             {
                 for(int c = 0; c < cols; c++)
-                {
                     cells[r,c].Background = empty;
-                }
             }
         }
     }
