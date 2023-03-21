@@ -24,6 +24,15 @@ Tento cyklus je generovaný náhodně a je základní částí algoritmu.
 #### Generace náhodného Cyklu
 Za normálních podmínek je vytvořit takovýto cyklus velice těžké. Ovšem na tento program jen stačí, aby program generoval cyklus ve tvaru mřížky. <br>
 Postup :
-* Nejprve se vytvoří graf s dvakrát menšími stranami než má graf původní. Vznikne tak graf jehož každý uzel pokrývá 4 uzle (2 x 2) z původního grafu.
-* Pak se každý uzel grafu propojí horizontálně a vertikálně se sousedními uzly. Každá hrana grafu je náhodně ohodnocena přirozeným číslem.
-* Poté se graf předělá na minimální kostru grafu
+* nejprve se vytvoří graf s dvakrát menšími stranami než má graf původní. Vznikne tak graf jehož každý uzel pokrývá 4 uzle (2 x 2) z původního grafu
+* pak se každý uzel grafu propojí horizontálně a vertikálně se sousedními uzly. Každá hrana grafu je náhodně ohodnocena přirozeným číslem
+* poté se graf předělá na minimální kostru grafu
+* cyklus se vytvoří tak, že had pojede kolem hran grafu, které zbyly, a bude zatáčet co nejvíce doprava
+#### Minimální kostra grafu
+Minimální kostra grafu je graf, který obsahuje všechny uzly grafu ale jen některé hrany, tak aby celková hodnota grafu, vypočítaná ze součtu hodnot hran v grafu, byla co nejmenší <br>
+Minimální kostra grafu je vytvořena pomocí Jarníkova algoritmu (Primova). <br>
+#### Jarníkův algoritmus
+* ze začátku je přidán startovní uzel do seznamu S
+* pak se hledá uzel, který je napojen jen jednou hranou s co nejmenší hodnotou na jakýkoliv již přidaný uzel
+* nalezený uzel se přidá do seznamu uzlů
+* hledání uzlu se opakuje do té doby než jsou přidány všechny uzly
