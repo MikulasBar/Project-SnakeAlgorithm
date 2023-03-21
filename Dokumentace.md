@@ -33,6 +33,6 @@ Minimální kostra grafu je graf, který obsahuje všechny uzly grafu ale jen n�
 Minimální kostra grafu je vytvořena pomocí Jarníkova algoritmu (Primova). <br>
 #### Jarníkův algoritmus
 * ze začátku je přidán startovní uzel do seznamu S
-* pak se hledá uzel, který je napojen jen jednou hranou s co nejmenší hodnotou na jakýkoliv již přidaný uzel
-* nalezený uzel se přidá do seznamu uzlů
-* hledání uzlu se opakuje do té doby než jsou přidány všechny uzly
+* pak se hledá uzel, který je napojen jen jednou hranou s co nejmenší hodnotou na jakýkoliv uzel již přidaný do S
+* nalezený uzel se přidá do S
+* hledání uzlu se opakuje do té doby než jsou do S přidány všechny uzly
