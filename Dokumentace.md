@@ -36,3 +36,4 @@ Minimální kostra grafu je vytvořena pomocí Jarníkova algoritmu (Primova). <
 * pak se hledá uzel, který je napojen jen jednou hranou s co nejmenší hodnotou na jakýkoliv uzel již přidaný do S
 * nalezený uzel se přidá do S
 * hledání uzlu se opakuje do té doby než jsou do S přidány všechny uzly
+* v
