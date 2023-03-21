@@ -67,4 +67,6 @@ Upozornění: Popis algoritmu se vztahuje k upravené verzi algoritmu, kterou pr
   * pro každého souseda ***s*** uzlu ***t*** platí : <br>
     \> pokud je již v ***C*** nebo je ***s*** neprůchodný, přeskočí se <br>
     \> pokud není v ***O*** nebo když je hodnota ***G*** uzlu ***p*** uzlu ***s*** větší než hodnota ***G*** uzlu ***t***, pak <br>
-       &emsp;\-\> ***p*** uzlu ***s*** se rovná ***t***
+       &emsp;\-\> ***p*** uzlu ***s*** se rovná ***t*** <br>
+    \> pokud ***s*** není v ***O***, pak <br>
+       &emsp;\-\> ***s*** se přidá do ***O***
