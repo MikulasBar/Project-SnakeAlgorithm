@@ -19,7 +19,7 @@ Program používá šablonu WPF, která umožňuje lehčí stylizaci programu a 
 
 ## Popis algoritmu
 Algoritmus ovládá hada tak, že mu na každém poli, na které had připlazí, podává instrukce o dalším směru, kterým se má had dále vydat. <br>
-Algoritmus se dělí na dvě části : <br>
+Algoritmus se dělí na 4 části : <br>
 
 ### Hamiltonovský cyklus
 Hamiltonovský cyklus je pojem v topologii, který označuje graf, který lze projít tak, že každý uzel grafu je navštíven jen jednou, kromě startovního uzlu, který je zároven uzlem konečným. <br>
