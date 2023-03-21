@@ -44,7 +44,10 @@ Program ho používá kvůli tomu, že je to jeden z nejspolehlivějších algor
 #### Popis A* algoritmu
 Upozornění: popis algoritmu se vztahuje k upravené verzi algoritmu, kterou program využívá. 
 * algoritmus začíná se seznamem uzavřených uzlů C a otevřených uzlů O
+* algoritmus používá uzel t 
 * algoritmus používá hodnotu F která je suma hodnot G, H
-* hodnota H je suma rozdílu horizontálních souřadnic startovního a cílového uzlu a rozdílu vertikálních souřadnic startovního a cílového uzlu
-* hodnota G je minimální počet uzlů, přes které se musí daný uzel dostat ke startovnímu uzlu
-* 
+* hodnota H je suma rozdílu horizontálních souřadnic uzlu t a cílového uzlu a rozdílu vertikálních souřadnic uzlu t a cílového uzlu
+* hodnota G je počet uzlů, přes které se uzel t musí dostat na startovní uzel a to tímto způsobem :
+  * uzel a aktuální uzel, ze začátku je uzel a roven uzlu t 
+  * uzel p je takový uzel, na který odkazuje uzel a, každý uzel tedy odkazuje na svůj uzel p 
+  * 
