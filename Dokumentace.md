@@ -54,15 +54,15 @@ Program ho používá kvůli tomu, že je to jeden z nejspolehlivějších algor
 Upozornění: Popis algoritmu se vztahuje k upravené verzi algoritmu, kterou program využívá. 
 * algoritmus začíná se seznamem uzavřených uzlů ***C*** a otevřených uzlů ***O***
 * algoritmus používá uzel ***t***, na začátku je uzel ***t*** roven startovnímu uzlu, přidá se do ***O*** a určí se mu hodnota ***F***
-* hodnota ***F*** uzlu ***t*** je suma hodnot ***G***, ***H***
+* hodnota ***F*** uzlu ***t*** je suma hodnot ***G*** a ***H***
 * hodnota ***H*** uzlu ***t*** je suma rozdílu horizontálních souřadnic uzlu ***t*** a cílového uzlu a rozdílu vertikálních souřadnic uzlu ***t*** a cílového uzlu
 * hodnota ***G*** uzlu ***t*** se vypočítá tímto způsobem :
   * nejprve je hodnota ***G*** rovna 0
   * uzel ***x*** je aktuální uzel, ze začátku je uzel ***x*** roven uzlu ***t*** 
   * uzel ***p*** uzlu ***x*** je takový uzel, na který odkazuje uzel ***x***, každý uzel tedy odkazuje na svůj uzel ***p*** 
-  * uzel ***x*** se opakovaně stává uzlem ***p*** do té doby než je uzel ***x*** roven startovnímu uzlu
+  * uzel ***x*** se opakovaně přemisťuje na pozici svého uzlu ***p*** do té doby než je uzel ***x*** roven startovnímu uzlu
   * pokaždé když se uzel ***x*** stane uzlem ***p*** hodnota ***G*** stoupne o 1
-* dokud se uzel ***t*** nerovná cílovému uzlu AStar používá cyklus :
+* dokud se uzel ***t*** nerovná cílovému uzlu používá se cyklus :
   * z ***O*** se vybere uzel s nejmenší hodnotou ***F***, označí se jako uzel ***t***, odebere se z ***O*** a přidá se do ***C***
   * pro každého souseda ***s*** uzlu ***t*** platí : <br>
     \> pokud je již v ***C*** nebo je ***s*** neprůchodný, přeskočí se <br>
@@ -70,3 +70,10 @@ Upozornění: Popis algoritmu se vztahuje k upravené verzi algoritmu, kterou pr
        &emsp;\-\> ***p*** uzlu ***s*** se rovná ***t*** <br>
     \> pokud ***s*** není v ***O***, pak <br>
        &emsp;\-\> ***s*** se přidá do ***O***
+* poté se optimální cesta hledá způsobem :
+  * seznam ***L*** je prázdný seznam
+  * uzel ***d*** se rovná cílovému uzlu
+  * dokud uzel ***d*** se nerovná startovnímu uzlu tak se opakuje : <br>
+    \> uzel ***d*** se přidá do ***L*** <br>
+    \> uzel ***d*** se přemístí na pozici svého uzlu ***p***
+* seznam ***L*** je finální seznam všech klíčových pozicí v optimální cestě
