@@ -27,7 +27,7 @@ Postup :
 * nejprve se vytvoří graf s dvakrát menšími stranami než má graf původní. Vznikne tak graf jehož každý uzel pokrývá 4 uzle (2 x 2) z původního grafu
 * pak se každý uzel grafu propojí horizontálně a vertikálně se sousedními uzly. Každá hrana grafu je náhodně ohodnocena přirozeným číslem
 * poté se graf předělá na minimální kostru grafu
-* cyklus se vytvoří tak, že had pojede kolem hran grafu, které zbyly, a bude zatáčet co nejvíce doprava
+* cyklus se vytvoří tak, že had pojede kolem hran grafu, které zbyly, a bude zatáčet co nejvíce doprava, na každém pole rozdá směr, který odkazuje na další pole v cyklu  
 #### Minimální kostra grafu
 Minimální kostra grafu je graf, který obsahuje všechny uzly grafu ale jen některé hrany, tak aby celková hodnota grafu, vypočítaná ze součtu hodnot hran v grafu, byla co nejmenší <br>
 Minimální kostra grafu je vytvořena pomocí Jarníkova algoritmu (Primova). <br>
@@ -37,3 +37,14 @@ Minimální kostra grafu je vytvořena pomocí Jarníkova algoritmu (Primova). <
 * nalezený uzel se přidá do U, hrana která ho propojila se přidá do seznamu H
 * hledání uzlu a hran se opakuje do té doby než jsou do S přidány všechny uzly
 * výsledný graf je seznam uzlů U je jeho hran H
+### Path-Finding Algoritmus
+Path-Finding agoritmus slouží k vyhledání nejkratší cesty v grafu od startovního uzlu do cílového uzlu. <br>
+Použitý algoritmus se jmenuje A* (AStar). <br>
+Program ho používá kvůli tomu, že je to jeden z nejspolehlivějších algoritmů. <br>
+#### Popis A* algoritmu
+Upozornění: popis algoritmu se vztahuje k upravené verzi algoritmu, kterou program využívá. 
+* algoritmus začíná se seznamem uzavřených uzlů C a otevřených uzlů O
+* algoritmus používá hodnotu F která je suma hodnot G, H
+* hodnota H je suma rozdílu horizontálních souřadnic startovního a cílového uzlu a rozdílu vertikálních souřadnic startovního a cílového uzlu
+* hodnota G je minimální počet uzlů, přes které se musí daný uzel dostat ke startovnímu uzlu
+* 
