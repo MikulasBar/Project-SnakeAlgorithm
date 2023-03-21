@@ -12,5 +12,18 @@ Hráč může hada ovládat šipkami a měnit jeho směr. V tomto programu je hr
 Had umírá, když narazí do kraje pole nebo sám do sebe. <br>
 Dohraná hra je tehdy, když had zaplní celou herní plochu a nezbyde tak žádné prázdné pole.<br>
 ## Popis použitých technologií
-Program je napsaný v jazyce C# verze ____. Verze použitého DOTNETu je 7.0 <br>
-Program používá šablonu WPF, která umožňuje lehčí stylizaci programu 
+Program je napsaný v jazyce C# verze ____. Verze použitého DOTNETu je 7.0. <br>
+Program používá šablonu WPF, která umožňuje lehčí stylizaci programu a vizualizaci hry pomocí XAML jazyku. <br>
+## Popis algoritmu
+Algoritmus ovládá hada tak, že mu na každém poli, na které had připlazí, podává instrukce o dalším směru, kterým se má had dále vydat. <br>
+Algoritmus se dělí na dvě části : <br>
+### Hamiltonovský cyklus
+Hamiltonovský cyklus je pojem v topologii, který označuje graf, který lze projít tak, že každý uzel grafu je navštíven jen jednou, kromě startovního uzlu, který je zároven uzlem konečným. <br>
+Tento pojem je perfektní pro dohrání Snaka v tom, že pokud had bude Hamiltonovský cyklus následovat, vždy sebere v cyklu jablko a nidky se nesrazí, protože jde jen jedním směrem. <br>
+Tento cyklus je generovaný náhodně a je základní částí algoritmu.
+#### Generace náhodného Cyklu
+Za normálních podmínek je vytvořit takovýto cyklus velice těžké. Ovšem na tento program jen stačí, aby program generoval cyklus ve tvaru mřížky. <br>
+Postup :
+* Nejprve se vytvoří graf s dvakrát menšími stranami než má graf původní. Vznikne tak graf jehož každý uzel pokrývá 4 uzle (2 x 2) z původního grafu.
+* Pak se každý uzel grafu propojí horizontálně a vertikálně se sousedními uzly. Každá hrana grafu je náhodně ohodnocena přirozeným číslem.
+* 
