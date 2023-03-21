@@ -26,4 +26,4 @@ Za normálních podmínek je vytvořit takovýto cyklus velice těžké. Ovšem 
 Postup :
 * Nejprve se vytvoří graf s dvakrát menšími stranami než má graf původní. Vznikne tak graf jehož každý uzel pokrývá 4 uzle (2 x 2) z původního grafu.
 * Pak se každý uzel grafu propojí horizontálně a vertikálně se sousedními uzly. Každá hrana grafu je náhodně ohodnocena přirozeným číslem.
-* 
+* Poté se graf předělá na minimální kostru grafu
