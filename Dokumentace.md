@@ -12,7 +12,7 @@ Hráč může hada ovládat šipkami a měnit jeho směr. V tomto programu je hr
 Had umírá, když narazí do kraje pole nebo sám do sebe. <br>
 Dohraná hra je tehdy, když had zaplní celou herní plochu a nezbyde tak žádné prázdné pole.<br>
 ## Popis použitých technologií
-Program je napsaný v jazyce C# verze ____. Verze použitého DOTNETu je 7.0. <br>
+Program je napsaný v jazyce C# verze 11. Verze použitého DOTNETu je 7.0. <br>
 Program používá šablonu WPF, která umožňuje lehčí stylizaci programu a vizualizaci hry pomocí XAML jazyku. <br>
 ## Popis algoritmu
 Algoritmus ovládá hada tak, že mu na každém poli, na které had připlazí, podává instrukce o dalším směru, kterým se má had dále vydat. <br>
@@ -42,7 +42,7 @@ Path-Finding agoritmus slouží k vyhledání nejkratší cesty v grafu od start
 Použitý algoritmus se jmenuje A* (AStar). <br>
 Program ho používá kvůli tomu, že je to jeden z nejspolehlivějších algoritmů. <br>
 #### Popis A* algoritmu
-Upozornění: popis algoritmu se vztahuje k upravené verzi algoritmu, kterou program využívá. 
+Upozornění: Popis algoritmu se vztahuje k upravené verzi algoritmu, kterou program využívá. 
 * algoritmus začíná se seznamem uzavřených uzlů C a otevřených uzlů O
 * algoritmus používá uzel t 
 * algoritmus používá hodnotu F která je suma hodnot G, H
