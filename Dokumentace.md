@@ -77,3 +77,9 @@ Upozornění: Popis algoritmu se vztahuje k upravené verzi algoritmu, kterou pr
     \> uzel ***d*** se přidá do ***L*** <br>
     \> uzel ***d*** se přemístí na pozici svého uzlu ***p***
 * seznam ***L*** je finální seznam všech klíčových pozicí v optimální cestě
+
+### Popis Cyklu
+Algoritmus se řídí podmínkami. <br>
+Podle vyhodnocení pozice se algoritmus rozhodne co had udělá. <br>
+Podmínky jsou následující : 
+* 
