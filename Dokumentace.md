@@ -95,3 +95,9 @@ Po spuštění se na obrazovce objeví herní plocha ale prázdná a nic se v n�
 Aby se hra aktivovala, je potřeba zmáčknout jakoukoli klávesu na klávesnici. <br>
 Po aktivaci hry začne algoritmus hru hrát do té doby než hru dohraje. <br>
 Pokud se hra aktivuje uživatel může smáčknout klávesu **R** pro restart hry. <br>
+## Rozvoj v budoucnu
+Program není dokonalý. <br>
+V budoucnu by se mohl zdokonalit a případně zjednodušit a zrychlit.
+## Použití programu
+Program se nedá v reálném životě využít. <br>
+Mohl by se využívat jako příklad a vizualizace některých použitých algoritmů jako je AStar, Jarníkův algoritmus nebo hamiltonovský cyklus, které se v reálném životě dají použít.
