@@ -51,7 +51,7 @@ Použitý algoritmus se jmenuje A* (AStar). <br>
 Program ho používá kvůli tomu, že je to jeden z nejspolehlivějších algoritmů. <br>
 
 #### Popis A* algoritmu
-Upozornění: Popis algoritmu se vztahuje k upravené verzi algoritmu, kterou program využívá. 
+ **Upozornění: Popis algoritmu se vztahuje k upravené verzi algoritmu, kterou program využívá.**
 * algoritmus začíná se seznamem uzavřených uzlů ***C*** a otevřených uzlů ***O***
 * algoritmus používá uzel ***t***, na začátku je uzel ***t*** roven startovnímu uzlu, přidá se do ***O*** a určí se mu hodnota ***F***
 * hodnota ***F*** uzlu ***t*** je suma hodnot ***G*** a ***H***
@@ -89,3 +89,9 @@ tak had vyhledá nejkratší možnou cestu k poslednímu bodu cyklu, tak aby se 
 * pokud je ***k*** jablka větší než ***k*** hlavy a zároveň ***k*** ocasu je větší než ***k*** jablka nebo menší než ***k*** hlavy <br>
 tak had  vyhledá nejkratší možnou cestu k jablku cyklu, tak aby se ***k*** hlavy hada nikdy nezmenšovala 
 * pokud ani jedna podmínka nebyla splněna tak had leze přesně podle cyklu <br>
+## Návod na použití
+Program se dá považovat za zero player game, to znamená, že se hraje sám a při průběhu nepotřebuje vztup od uživatele. <br>
+Po spuštění se na obrazovce objeví herní plocha ale prázdná a nic se v ní neděje. <br>
+Aby se hra aktivovala, je potřeba zmáčknout jakoukoli klávesu na klávesnici. <br>
+Po aktivaci hry začne algoritmus hru hrát do té doby než hru dohraje. <br>
+Pokud se hra aktivuje uživatel může smáčknout klávesu **R** pro restart hry. <br>
