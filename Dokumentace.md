@@ -82,4 +82,5 @@ Upozornění: Popis algoritmu se vztahuje k upravené verzi algoritmu, kterou pr
 Algoritmus se řídí podmínkami. <br>
 Podle vyhodnocení pozice se algoritmus rozhodne co had udělá. <br>
 Podmínky jsou následující : 
-* 
+* Každé pole má jedno číslo, toto číslo označuje pořadí v cyklu (první pole má 0, poslední řádky * sloupce -1)
+* pokud
