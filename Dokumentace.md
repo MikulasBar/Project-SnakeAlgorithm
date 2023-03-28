@@ -44,7 +44,7 @@ Minimální kostra grafu je vytvořena pomocí Jarníkova algoritmu (Primova). <
 * nalezený uzel se přidá do U, hrana která ho propojila se přidá do seznamu H
 * hledání uzlu a hran se opakuje do té doby než jsou do S přidány všechny uzly
 * výsledný graf je seznam uzlů U je jeho hran H
-* 
+
 ### Path-Finding Algoritmus
 Path-Finding agoritmus slouží k vyhledání nejkratší cesty v grafu od startovního uzlu do cílového uzlu. <br>
 Použitý algoritmus se jmenuje A* (AStar). <br>
@@ -89,15 +89,18 @@ tak had vyhledá nejkratší možnou cestu k poslednímu bodu cyklu, tak aby se 
 * pokud je ***k*** jablka větší než ***k*** hlavy a zároveň ***k*** ocasu je větší než ***k*** jablka nebo menší než ***k*** hlavy <br>
 tak had  vyhledá nejkratší možnou cestu k jablku cyklu, tak aby se ***k*** hlavy hada nikdy nezmenšovala 
 * pokud ani jedna podmínka nebyla splněna tak had leze přesně podle cyklu <br>
+
 ## Návod na použití
 Program se dá považovat za zero player game, to znamená, že se hraje sám a při průběhu nepotřebuje vztup od uživatele. <br>
 Po spuštění se na obrazovce objeví herní plocha ale prázdná a nic se v ní neděje. <br>
 Aby se hra aktivovala, je potřeba zmáčknout jakoukoli klávesu na klávesnici. <br>
 Po aktivaci hry začne algoritmus hru hrát do té doby než hru dohraje. <br>
 Pokud se hra aktivuje uživatel může smáčknout klávesu **R** pro restart hry. <br>
+
 ## Rozvoj v budoucnu
 Program není dokonalý. <br>
 V budoucnu by se mohl zdokonalit a případně zjednodušit a zrychlit.
+
 ## Použití programu
 Program se nedá v reálném životě využít. <br>
 Mohl by se využívat jako příklad a vizualizace některých použitých algoritmů jako je AStar, Jarníkův algoritmus nebo hamiltonovský cyklus, které se v reálném životě dají použít.
