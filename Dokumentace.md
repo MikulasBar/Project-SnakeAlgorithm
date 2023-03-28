@@ -78,9 +78,14 @@ Upozornění: Popis algoritmu se vztahuje k upravené verzi algoritmu, kterou pr
     \> uzel ***d*** se přemístí na pozici svého uzlu ***p***
 * seznam ***L*** je finální seznam všech klíčových pozicí v optimální cestě
 
-### Popis Cyklu
-Algoritmus se řídí podmínkami. <br>
+### Popis chování hada
+Algoritmus se řídí podmínkami, které se kontrolují po každém pohybu hada. <br>
 Podle vyhodnocení pozice se algoritmus rozhodne co had udělá. <br>
 Podmínky jsou následující : 
-* Každé pole má jedno číslo, toto číslo označuje pořadí v cyklu (první pole má 0, poslední řádky * sloupce -1)
-* pokud
+* každé pole má jedno číslo, toto číslo označuje pořadí v cyklu (první pole má 0, poslední ***řádky*** * ***sloupce*** -1), číslo je označeno jako ***k***
+* pokud je had větší než ***řádky*** * (***sloupce*** - 7.5), had leze přesně podle cyklu
+* pokud je ***k*** hlavy hada větší než ***k*** ocasu hada a větší než ***k*** jablka a zároveň není rovno ***řádky*** * ***sloupce*** -1 <br>
+tak had vyhledá nejkratší možnou cestu k poslednímu bodu cyklu, tak aby se ***k*** hlavy hada nikdy nezmenšovala
+* pokud je ***k*** jablka větší než ***k*** hlavy a zároveň ***k*** ocasu je větší než ***k*** jablka nebo menší než ***k*** hlavy <br>
+tak had  vyhledá nejkratší možnou cestu k jablku cyklu, tak aby se ***k*** hlavy hada nikdy nezmenšovala 
+* pokud ani jedna podmínka nebyla splněna tak had leze přesně podle cyklu <br>
