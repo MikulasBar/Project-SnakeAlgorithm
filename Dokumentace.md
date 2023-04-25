@@ -95,7 +95,7 @@ Program se dá považovat za zero player game, to znamená, že se hraje sám a 
 Po spuštění se na obrazovce objeví herní plocha ale prázdná a nic se v ní neděje. <br>
 Aby se hra aktivovala, je potřeba zmáčknout klávesu **R** (příprava hry) a **S** (spuštění hry). <br>
 Po aktivaci hry začne algoritmus hru hrát do té doby než hru dohraje. <br>
-Uživatel může kdykoli zmáčknout klávesu **R** pro restart hry. <br>
+Uživatel může kdykoli zmáčknout klávesu **R** pro restart hry nebo **S** pro zastavení / spuštění hry. <br>
 
 ## Rozvoj v budoucnu
 Program není dokonalý. <br>
