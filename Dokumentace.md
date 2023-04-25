@@ -93,9 +93,9 @@ tak had  vyhledá nejkratší možnou cestu k jablku cyklu, tak aby se ***k*** h
 ## Návod na použití
 Program se dá považovat za zero player game, to znamená, že se hraje sám a při průběhu nepotřebuje vztup od uživatele. <br>
 Po spuštění se na obrazovce objeví herní plocha ale prázdná a nic se v ní neděje. <br>
-Aby se hra aktivovala, je potřeba zmáčknout jakoukoli klávesu na klávesnici. <br>
+Aby se hra aktivovala, je potřeba zmáčknout klávesu **R** (příprava hry) a **S** (spuštění hry). <br>
 Po aktivaci hry začne algoritmus hru hrát do té doby než hru dohraje. <br>
-Pokud se hra aktivuje uživatel může smáčknout klávesu **R** pro restart hry. <br>
+Uživatel může kdykoli zmáčknout klávesu **R** pro restart hry. <br>
 
 ## Rozvoj v budoucnu
 Program není dokonalý. <br>
